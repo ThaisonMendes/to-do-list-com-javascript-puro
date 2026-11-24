@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Thaison Mendes Vieira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Lista de Tarefas</h1>
+            <form>
+                <input type="text" id="task-field" placeholder="Adicione uma nova tarefa...">
+                <button type="submit">Adicionar</button>
+            </form>
+            <!-------- Filtros -------->
+            <form>
+                <select name="status-filter" id="status-filter">
+                    <option value="all-tasks">Todas</option>
+                    <option value="completed">Concluídas</option>
+                    <option value="pending">Pendentes</option>
+                </select>
+                <select name="category-filter" id="category-filter">
+                    <option value="low">Baixa</option>
+                    <option value="medium">Média</option>
+                    <option value="high">Alta</option>
+                </select>
+                <div>
+                    <input type="text" placeholder="Pesquisar tarefa...">
+                </div>
+            </form>
+            <!-------- Lista de Tarefas -------->
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" name="task-checkbox">
+                        <span>Ir na academia</span>
+                    </label>
+                    <div>
+                        <button type="button"><i class="fa-regular fa-pen-to-square"></i></button>
+                        <button type="button"><i class="fa-regular fa-trash-can"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>Feito por Thaison Mendes Vieira</p>
+    </footer>
+</body>
+</html>
